@@ -10,12 +10,12 @@ object Math {
   val height = 1024
   val dx = 0.001
   val d = 20.0 //zoom
-  val function = "f(x) = math.sin(x) * 9 - 10 + x / 2 "
+  val function = "f(x) = sin(x) * 3 + x "
   val fontSize = 25
   def main(args: Array[String]): Unit = {
     val sc = new Scanner(System.in)
     def f(x:Double): Double =  {
-      x * (x - 3)
+      math.sin(x) * 3 + x
     }
     def df(x:Int):Double = {
       (f(x + dx) - f(x)) / dx
