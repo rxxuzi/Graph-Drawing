@@ -4,7 +4,7 @@ import java.io.File
 import java.util.Scanner
 import javax.imageio.ImageIO
 
-object Math2 {
+object Math {
   val path = "./rsc/graph2.png"
   val width = 1024
   val height = 1024
