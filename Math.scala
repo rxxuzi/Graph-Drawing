@@ -5,7 +5,7 @@ import java.util.Scanner
 import javax.imageio.ImageIO
 
 object Math {
-  val path = "./rsc/graph2.png"
+  val path = "" //相対パスの記入
   val width = 1024
   val height = 1024
   val dx = 0.001
@@ -15,8 +15,9 @@ object Math {
   def main(args: Array[String]): Unit = {
     val sc = new Scanner(System.in)
     def f(x:Double): Double =  {
-      math.sin(x) * 3 + x
+      math.sin(x) * 3 + x //ここに関数の入力
     }
+    
     def df(x:Int):Double = {
       (f(x + dx) - f(x)) / dx
     }
